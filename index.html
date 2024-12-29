@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper and Scissors</title>
+</head>
+<div class="container">
+    <!-- Title Section -->
+    <div class="title-section">
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">The ultimate showdown where you pick your weapon and hope the universe isn't judging your life choices.</p>
+    </div>
+
+    <!-- Score Section -->
+    <div class="score-box">
+        <span class="score-label">SCORE:</span>
+        <span class="score-value">
+            <span id="playerScore">0</span>
+            -
+            <span id="computerScore">0</span>
+        </span>
+    </div>
+
+    <!-- Game Arena -->
+    <div class="game-arena">
+        <div class="battle-area">
+            <!-- Player Card -->
+            <div class="card-container">
+                <div class="card" id="playerCard">
+                    <div class="card-front">
+                        <img src="assests/player.png" alt="Player Avatar" class="avatar-img">
+                    </div>
+                    <div class="card-back">
+                        <img src="" alt="" class="choice-img" id="playerChoiceImg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="vs-text">VS.</div>
+
+            <!-- Computer Card -->
+            <div class="card-container">
+                <div class="card" id="computerCard">
+                    <div class="card-front">
+                        <img src="assests/computer.png" alt="Computer Avatar" class="avatar-img">
+                    </div>
+                    <div class="card-back">
+                        <img src="" alt="" class="choice-img" id="computerChoiceImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-text" id="resultText"></div>
+    </div>
+
+    <!-- Choice Buttons -->
+    <div class="choice-buttons">
+        <button class="choice-btn" data-choice="rock">
+            <img src="assests/rock.png" alt="Rock" class="choice-img">
+        </button>
+        <button class="choice-btn" data-choice="paper">
+            <img src="assests/paper.png" alt="Paper" class="choice-img">
+        </button>
+        <button class="choice-btn" data-choice="scissors">
+            <img src="assests/scissors.png" alt="Scissors" class="choice-img">
+        </button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
